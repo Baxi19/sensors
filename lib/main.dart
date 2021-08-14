@@ -42,14 +42,16 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text('Sensors'),
         centerTitle: true,
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Text('Accelerometer: $accelerometer'),
-          Text('UserAccelerometer: $userAccelerometer'),
-          Text('Gyroscope: $gyroscope'),
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text('Accelerometer: $accelerometer'),
+            Text('UserAccelerometer: $userAccelerometer'),
+            Text('Gyroscope: $gyroscope'),
+          ],
+        ),
       ),
     );
   }
